@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project 4 - Smooth Scroll</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a data-page="home" href="#home">Home</a></li>
+          <li><a data-page="about" href="#about">About</a></li>
+          <li><a data-page="services" href="#services">Services</a></li>
+          <li><a data-page="contact" href="#contact">Contact</a></li>
+          <div class="trans"></div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section data-index="0" class="home" id="home">
+        <div style="background-color: aqua">Section 1</div>
+      </section>
+
+      <section data-index="1" class="about" id="about">
+        <div style="background-color: hotpink">Section 2</div>
+      </section>
+
+      <section data-index="2" class="services" id="services">
+        <div style="background-color: wheat">Section 3</div>
+      </section>
+
+      <section data-index="3" class="contact" id="contact">
+        <div style="background-color: purple">Section 4</div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
