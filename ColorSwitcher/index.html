@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 7: Color Switcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <p>RGB(255, 255, 255)</p>
+      <button>Switch Color</button>
+    </div>
+    <script>
+      let p = document.querySelector("p");
+      let btn = document.querySelector("button");
+      btn.addEventListener("click", () => {
+        let randomRed = Math.floor(Math.random() * 255);
+        let randomGreen = Math.floor(Math.random() * 255);
+        let randomBlue = Math.floor(Math.random() * 255);
+        p.textContent = `RGB(${randomRed}, ${randomGreen}, ${randomBlue})`;
+        document.body.style.backgroundColor = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
+      });
+    </script>
+  </body>
+</html>
